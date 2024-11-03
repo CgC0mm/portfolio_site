@@ -1,0 +1,49 @@
+:root{
+    --main-bg-color: #fff;
+    --main-text-color: #000;
+    --topnav-bg-color: #2d3142;
+    --topnav-text-color: #fff;
+}
+
+body{
+background-color: var(--main-bg-color);
+color: var(--main-text-color)
+}
+
+.topnav {
+padding:5;
+background-color: var(--topnav-bg-color);
+}
+
+.topnav nav{
+width: 100%;
+}
+
+.topnav ul{
+list-style: none;
+padding: 0;
+}
+
+.topnav a{
+text-decoration: none;
+color: var(--main-text-color);
+}
+
+.main {
+padding: 0px;
+background-color: var(--main-bg-color);
+height: 100%;
+}
+
+.main h1{
+font-size: 3rem;
+font-weight: 400;
+}
+
+.container-fluid {
+padding:0%;
+}
+
+.navbar-nav {
+width: 100%;
+}
