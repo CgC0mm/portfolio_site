@@ -121,3 +121,6 @@ dmypy.json
 cython_debug/
 
 *.pyc
+
+
+portfolio_env
