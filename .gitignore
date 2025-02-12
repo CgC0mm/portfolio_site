@@ -122,4 +122,4 @@ cython_debug/
 
 *.pyc
 
-portfolio_env
+portfolio_env/**
