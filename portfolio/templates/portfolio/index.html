@@ -13,8 +13,8 @@
         <link rel="stylesheet" href="{% static 'portfolio/button.css' %}">
     </head>
     <body>
+        {% include "portfolio/topnav.html" %}
         <div class="container-fluid text-center main">
-            {% include "portfolio/topnav.html" %}
             {% block content %}
                 <h1>Cris Garcia</h1>
                 <p>{% lorem 5 b random %}</p>
