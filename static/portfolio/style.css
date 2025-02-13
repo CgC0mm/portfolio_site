@@ -1,18 +1,18 @@
-:root{
+/* :root{
     --main-bg-color: #fff;
     --main-text-color: #000;
     --topnav-bg-color: #2d3142;
     --topnav-text-color: #fff;
-}
+} */
 
-body{
+/* body{
 background-color: var(--main-bg-color);
 color: var(--main-text-color)
-}
+} */
 
 .topnav {
 padding:5;
-background-color: var(--topnav-bg-color);
+/* background-color: var(--topnav-bg-color); */
 }
 
 .topnav nav{
@@ -26,12 +26,12 @@ padding: 0;
 
 .topnav a{
 text-decoration: none;
-color: var(--main-text-color);
+/* color: var(--main-text-color); */
 }
 
 .main {
 padding: 0px;
-background-color: var(--main-bg-color);
+/* background-color: var(--main-bg-color); */
 height: 100%;
 }
 

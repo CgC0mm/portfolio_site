@@ -5,14 +5,10 @@ const storedTheme = localStorage.getItem('theme')
 
 //Set the theme for the page based on what theme selected from cookie
 if(storedTheme == 'dark'){
-    document.documentElement.style.setProperty('--main-bg-color','#636466')
-    document.documentElement.style.setProperty('--main-text-color','#fff')
-    document.documentElement.style.setProperty('--topnav-bg-color','#0f1632')
+    $('html').attr('data-bs-theme','dark')
     themeToggle.checked = true;
 }else{
-    document.documentElement.style.setProperty('--main-bg-color','#fff')
-    document.documentElement.style.setProperty('--main-text-color','#333')
-    document.documentElement.style.setProperty('--topnav-bg-color','#2d3142')
+    $('html').attr('data-bs-theme','light')
     themeToggle.checked = false; 
 }
 
@@ -20,16 +16,12 @@ if(storedTheme == 'dark'){
 themeToggle.addEventListener('click',() => {
     //if the checkbox is checked, set the dark theme and update cookie
     if(themeToggle.checked){
-        document.documentElement.style.setProperty('--main-bg-color','#636466')
-    document.documentElement.style.setProperty('--main-text-color','#fff')
-    document.documentElement.style.setProperty('--topnav-bg-color','#2d3142')
+        $('html').attr('data-bs-theme','dark')
         localStorage.setItem('theme','dark')
     }
     //If checkbox is unchecked, set the light theme and update cookie
     else{
-        document.documentElement.style.setProperty('--main-bg-color','#fff')
-        document.documentElement.style.setProperty('--main-text-color','#333')
-        document.documentElement.style.setProperty('--topnav-bg-color','#1a91d5')
+        $('html').attr('data-bs-theme','light')
         localStorage.setItem('theme','light')
     }
 })
